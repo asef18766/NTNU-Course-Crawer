@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests : NSObject
+@end
+@implementation PodsDummy_Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests
+@end

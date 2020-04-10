@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CABF55B702A19D415BE4ED /* Pods_NTNU_Course_CrawerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */; };
+		184DAEF29D64FD90EC8E45E4 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */; };
+		835E997FF7CB061EDB937106 /* Pods_NTNU_Course_Crawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */; };
 		9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF02414FD8D008FE785 /* AppDelegate.swift */; };
 		9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF22414FD8D008FE785 /* SceneDelegate.swift */; };
 		9F158BF52414FD8D008FE785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF42414FD8D008FE785 /* ViewController.swift */; };
@@ -15,6 +18,7 @@
 		9F158BFD2414FD95008FE785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F158BFB2414FD95008FE785 /* LaunchScreen.storyboard */; };
 		9F158C082414FD95008FE785 /* NTNU_Course_CrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158C072414FD95008FE785 /* NTNU_Course_CrawerTests.swift */; };
 		9F158C132414FD95008FE785 /* NTNU_Course_CrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158C122414FD95008FE785 /* NTNU_Course_CrawerUITests.swift */; };
+		9FA11ED9244069A4000B4A6E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA11ED8244069A4000B4A6E /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_Crawer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_CrawerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA1318A57F4D09905D3976E /* Pods-NTNU Course Crawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer.release.xcconfig"; sourceTree = "<group>"; };
+		813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course CrawerTests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course CrawerTests/Pods-NTNU Course CrawerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		954C35BF499513CF1136F69F /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F158BED2414FD8D008FE785 /* NTNU Course Crawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTNU Course Crawer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F158BF02414FD8D008FE785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F158BF22414FD8D008FE785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		9F158C0E2414FD95008FE785 /* NTNU Course CrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NTNU Course CrawerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F158C122414FD95008FE785 /* NTNU_Course_CrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTNU_Course_CrawerUITests.swift; sourceTree = "<group>"; };
 		9F158C142414FD95008FE785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA11ED8244069A4000B4A6E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		C084B7A73AE1FD22D8649AF1 /* Pods-NTNU Course CrawerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course CrawerTests.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course CrawerTests/Pods-NTNU Course CrawerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF614FC31288F759D2947E80 /* Pods-NTNU Course Crawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835E997FF7CB061EDB937106 /* Pods_NTNU_Course_Crawer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CABF55B702A19D415BE4ED /* Pods_NTNU_Course_CrawerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184DAEF29D64FD90EC8E45E4 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		913A0DF4E8ACF53AECDA5DF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF614FC31288F759D2947E80 /* Pods-NTNU Course Crawer.debug.xcconfig */,
+				3BA1318A57F4D09905D3976E /* Pods-NTNU Course Crawer.release.xcconfig */,
+				813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */,
+				954C35BF499513CF1136F69F /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig */,
+				820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */,
+				C084B7A73AE1FD22D8649AF1 /* Pods-NTNU Course CrawerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9F158BE42414FD8D008FE785 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				9F158C062414FD95008FE785 /* NTNU Course CrawerTests */,
 				9F158C112414FD95008FE785 /* NTNU Course CrawerUITests */,
 				9F158BEE2414FD8D008FE785 /* Products */,
+				913A0DF4E8ACF53AECDA5DF2 /* Pods */,
+				B7C1D36D3D73956DE00CD73A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +138,7 @@
 				9F158BF92414FD95008FE785 /* Assets.xcassets */,
 				9F158BFB2414FD95008FE785 /* LaunchScreen.storyboard */,
 				9F158BFE2414FD95008FE785 /* Info.plist */,
+				9FA11ED8244069A4000B4A6E /* LoginModel.swift */,
 			);
 			path = "NTNU Course Crawer";
 			sourceTree = "<group>";
@@ -128,6 +161,16 @@
 			path = "NTNU Course CrawerUITests";
 			sourceTree = "<group>";
 		};
+		B7C1D36D3D73956DE00CD73A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */,
+				33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */,
+				13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F158C172414FD95008FE785 /* Build configuration list for PBXNativeTarget "NTNU Course Crawer" */;
 			buildPhases = (
+				62B771D3C0E014FF8F8894A4 /* [CP] Check Pods Manifest.lock */,
 				9F158BE92414FD8D008FE785 /* Sources */,
 				9F158BEA2414FD8D008FE785 /* Frameworks */,
 				9F158BEB2414FD8D008FE785 /* Resources */,
+				4790D8C245BE3661305A5438 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F158C1A2414FD95008FE785 /* Build configuration list for PBXNativeTarget "NTNU Course CrawerTests" */;
 			buildPhases = (
+				FF66BDFE3D9E0AA0B88BD392 /* [CP] Check Pods Manifest.lock */,
 				9F158BFF2414FD95008FE785 /* Sources */,
 				9F158C002414FD95008FE785 /* Frameworks */,
 				9F158C012414FD95008FE785 /* Resources */,
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F158C1D2414FD95008FE785 /* Build configuration list for PBXNativeTarget "NTNU Course CrawerUITests" */;
 			buildPhases = (
+				D89C0F33819FD63CF6926D43 /* [CP] Check Pods Manifest.lock */,
 				9F158C0A2414FD95008FE785 /* Sources */,
 				9F158C0B2414FD95008FE785 /* Frameworks */,
 				9F158C0C2414FD95008FE785 /* Resources */,
+				BC411245F13539791B14A9EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +302,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4790D8C245BE3661305A5438 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62B771D3C0E014FF8F8894A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTNU Course Crawer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC411245F13539791B14A9EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89C0F33819FD63CF6926D43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTNU Course Crawer-NTNU Course CrawerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF66BDFE3D9E0AA0B88BD392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTNU Course CrawerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F158BE92414FD8D008FE785 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F158BF52414FD8D008FE785 /* ViewController.swift in Sources */,
+				9FA11ED9244069A4000B4A6E /* LoginModel.swift in Sources */,
 				9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */,
 				9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */,
 			);
@@ -432,6 +584,7 @@
 		};
 		9F158C182414FD95008FE785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF614FC31288F759D2947E80 /* Pods-NTNU Course Crawer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +602,7 @@
 		};
 		9F158C192414FD95008FE785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA1318A57F4D09905D3976E /* Pods-NTNU Course Crawer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +620,7 @@
 		};
 		9F158C1B2414FD95008FE785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +642,7 @@
 		};
 		9F158C1C2414FD95008FE785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C084B7A73AE1FD22D8649AF1 /* Pods-NTNU Course CrawerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +664,7 @@
 		};
 		9F158C1E2414FD95008FE785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +684,7 @@
 		};
 		9F158C1F2414FD95008FE785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954C35BF499513CF1136F69F /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
