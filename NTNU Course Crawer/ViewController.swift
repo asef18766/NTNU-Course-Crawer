@@ -8,14 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    func raiseError(_ error: String) {
+    func raiseError(_ error: String)
+    {
         let controller = UIAlertController(title: "菜雞", message: error, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -26,17 +29,43 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var studentPasswd: UITextField!
     
-    @IBAction func login(_ sender: Any) {
-        if let id = studentID.text , let passwd = studentPasswd.text{
-            if id.isEmpty || passwd.isEmpty{
+    @IBAction func login(_ sender: Any)
+    {
+        if let id = studentID.text , let passwd = studentPasswd.text
+        {
+            if id.isEmpty || passwd.isEmpty
+            {
                 raiseError("please enter your info")
-            }else{
-                NTNU_Course_Crawer.login(id, passwd)
+            }
+            else
+            {
+                if(NTNU_Course_Crawer.login(id, passwd))
+                {
+                    do
+                    {
+                        try secondLogin(id)
+                    }
+                    catch NetworkErrors.SecondLoginError
+                    {
+                        raiseError("error when second login...QQ")
+                        return
+                    }
+                    catch
+                    {
+                        raiseError("unexpected error")
+                        return
+                    }
+                    performSegue(withIdentifier: "LoginSuccess", sender: nil)
+                }
+                else
+                {
+                    raiseError("login failed :P")
+                }
             }
         }
-        else{
+        else
+        {
             raiseError("please enter your info")
         }
     }
 }
-
