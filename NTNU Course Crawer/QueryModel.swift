@@ -33,12 +33,12 @@ struct QueryCourseListOptions
         }
     }
     
-    var deptCode:String
-    var formS: Int
-    var class1: Int
-    var generalCore:String
-    var notFull: Int
-    var courseCode: Int
+    var deptCode:String = "GU"
+    var formS: String = ""
+    var class1: String = ""
+    var generalCore:String = ""
+    var notFull: Int = 0
+    var courseCode: String = ""
     
     /*
      
@@ -47,7 +47,7 @@ struct QueryCourseListOptions
      second subscript indicste the section (range 0~14)
      
      */
-    var checkWkSection:[[Int]] = [[Int]](repeating: [Int](repeating: 0, count: 15), count: 7)
+    var checkWkSection:[[Int]] = [[Int]](repeating: [Int](repeating: 0, count: 16), count: 7)
     
     let action = "showGrid"
     let actionButton = "query"
@@ -65,11 +65,11 @@ struct QueryCourseListOptions
             URLQueryItem(name: "teacher", value: teacher),
             
             URLQueryItem(name: "deptCode", value: deptCode),
-            URLQueryItem(name: "formS", value: String(formS)),
-            URLQueryItem(name: "class1", value: String(class1)),
+            URLQueryItem(name: "formS", value: formS),
+            URLQueryItem(name: "class1", value: class1),
             URLQueryItem(name: "generalCore", value: generalCore),
             URLQueryItem(name: "notFull", value: String(notFull)),
-            URLQueryItem(name: "courseCode", value: String(courseCode)),
+            URLQueryItem(name: "courseCode", value: courseCode),
             
             URLQueryItem(name: "action", value: action),
             URLQueryItem(name: "actionButton", value: actionButton),
@@ -78,14 +78,15 @@ struct QueryCourseListOptions
             URLQueryItem(name: "courseCode", value: String(courseCode)),
             URLQueryItem(name: "limit", value: String(limit)),
         ]
-        for day in 1...7
+        for day in 1...6
         {
-            for section in 0...15
+            for section in 0...14
             {
                 urlComponents.queryItems?.append(URLQueryItem(name: "checkWkSection\(day)\(section)", value: String(checkWkSection[day][section]) ))
             }
         }
-        return urlComponents.url?.absoluteString ?? ""
+        print("url is \(urlComponents.url?.query ?? "")")
+        return urlComponents.url?.query ?? ""
     }
 }
 
@@ -161,9 +162,13 @@ internal func SendRequest(queryUrl:String , method:String , body:String) -> Data
     semaphore.wait()
     return result
 }
+func QueryCoursePrerequisite()
+{
+    _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/CourseQueryCtrl?action=query", method: "GET", body: "")
+    _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/CourseQueryCtrl?action=showGrid", method: "POST", body: "")
+}
 
-
-// submit an query for avaible course
+// submit an query for avaible course , must execute QueryCoursePrerequisite
 func QueryCourseList(opts:QueryCourseListOptions)->[Course]
 {
     let queryUrl = "http://cos3.ntnu.edu.tw/AasEnrollStudent/CourseQueryCtrl?action=showGrid"
@@ -177,4 +182,10 @@ func QueryCourseList(opts:QueryCourseListOptions)->[Course]
         }
     }
     return []
+}
+
+// function that must excute when end query course
+func ExitQueryCourseList()
+{
+    _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl", method: "GET", body: "")
 }
