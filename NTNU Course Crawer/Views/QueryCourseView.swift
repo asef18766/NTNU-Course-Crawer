@@ -4,8 +4,8 @@ struct QueryCourseView: View {
     @State var teacherName = ""
     @State var departmentIndex = 0
     @State var domainIndex = 0
+    @State var showDepartmentSelection = false
     let domains = ["一般體育科目", "一般體育科目", "一般體育科目", ]
-    let departments = ["資工系", "物理系", "數學系"]
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -25,12 +25,18 @@ struct QueryCourseView: View {
                 }
                 .padding(.bottom)
             }
-            HStack() {
-                Picker("系所", selection: $departmentIndex) {
-                    ForEach(0..<departments.count) {
-                        Text(self.departments[$0])
-                    }
-                }
+            Button(action: {
+                self.showDepartmentSelection = true
+            }) {
+                HStack() {
+                    Text("開課系所")
+                        .font(.headline)
+                    Spacer()
+                    Text(self.domains[departmentIndex])
+                    }.padding()
+                    .sheet(isPresented: $showDepartmentSelection) {
+                        DepartmentSelectionView(departmentIndex: self.$departmentIndex, isPresented: self.$showDepartmentSelection)
+                }.foregroundColor(.black)
             }
             NLabelTextField(text: $teacherName, label: "教師姓名")
             NLabelTextField(text: $teacherName, label: "課程名稱")

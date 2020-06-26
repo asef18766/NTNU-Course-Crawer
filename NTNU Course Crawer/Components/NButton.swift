@@ -2,20 +2,32 @@
 //  NButton.swift
 //  NTNU Course Crawer
 //
-//  Created by Bogay Chuang on 2020/6/26.
+//  Created by Student on 2020/6/25.
 //  Copyright © 2020 Normal OJ. All rights reserved.
 //
 
 import SwiftUI
 
 struct NButton: View {
+    var label: String
+    var action: () -> () = {}
+    var color: Color = .gray
+    var textColor: Color = .white
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action) {
+            Text(label)
+                .foregroundColor(textColor)
+                .font(.caption)
+                .padding(.all)
+        }
+        .background(color)
+        .cornerRadius(25)
     }
 }
 
 struct NButton_Previews: PreviewProvider {
     static var previews: some View {
-        NButton()
+        NButton(label: "Button")
     }
 }

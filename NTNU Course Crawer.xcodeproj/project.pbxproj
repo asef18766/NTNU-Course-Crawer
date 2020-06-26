@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		06CABF55B702A19D415BE4ED /* Pods_NTNU_Course_CrawerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */; };
 		184DAEF29D64FD90EC8E45E4 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */; };
+		59B4574024A6038600E68A31 /* QueryCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4573F24A6038600E68A31 /* QueryCourseView.swift */; };
+		59B4574424A6048700E68A31 /* NButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574324A6048700E68A31 /* NButton.swift */; };
+		59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574524A604D300E68A31 /* NLabelTextField.swift */; };
+		59B4574824A6087800E68A31 /* DepartmentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */; };
+		59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574924A6088F00E68A31 /* CourseInfoView.swift */; };
 		67C5B13B2D20DAD7243658D7 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */; };
 		835E997FF7CB061EDB937106 /* Pods_NTNU_Course_Crawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */; };
 		9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF02414FD8D008FE785 /* AppDelegate.swift */; };
@@ -45,6 +50,11 @@
 		13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_CrawerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA1318A57F4D09905D3976E /* Pods-NTNU Course Crawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer.release.xcconfig"; sourceTree = "<group>"; };
+		59B4573F24A6038600E68A31 /* QueryCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCourseView.swift; sourceTree = "<group>"; };
+		59B4574324A6048700E68A31 /* NButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NButton.swift; sourceTree = "<group>"; };
+		59B4574524A604D300E68A31 /* NLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLabelTextField.swift; sourceTree = "<group>"; };
+		59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectionView.swift; sourceTree = "<group>"; };
+		59B4574924A6088F00E68A31 /* CourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoView.swift; sourceTree = "<group>"; };
 		67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
 		813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course CrawerTests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course CrawerTests/Pods-NTNU Course CrawerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +107,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59B4573E24A602E900E68A31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59B4573F24A6038600E68A31 /* QueryCourseView.swift */,
+				59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */,
+				59B4574924A6088F00E68A31 /* CourseInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59B4574124A6046000E68A31 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				59B4574324A6048700E68A31 /* NButton.swift */,
+				59B4574524A604D300E68A31 /* NLabelTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		913A0DF4E8ACF53AECDA5DF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +164,8 @@
 		9F158BEF2414FD8D008FE785 /* NTNU Course Crawer */ = {
 			isa = PBXGroup;
 			children = (
+				59B4574124A6046000E68A31 /* Components */,
+				59B4573E24A602E900E68A31 /* Views */,
 				9F158BF02414FD8D008FE785 /* AppDelegate.swift */,
 				9F158BF22414FD8D008FE785 /* SceneDelegate.swift */,
 				9F158BF42414FD8D008FE785 /* ViewController.swift */,
@@ -418,10 +449,15 @@
 			files = (
 				9F158BF52414FD8D008FE785 /* ViewController.swift in Sources */,
 				9FD848F0244CA6A00072E047 /* MainMenuViewController.swift in Sources */,
+				59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */,
+				59B4574424A6048700E68A31 /* NButton.swift in Sources */,
+				59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */,
 				9FA11ED9244069A4000B4A6E /* LoginModel.swift in Sources */,
+				59B4574024A6038600E68A31 /* QueryCourseView.swift in Sources */,
 				9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */,
 				9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */,
 				67C5B13B2D20DAD7243658D7 /* CourseRequestModel.swift in Sources */,
+				59B4574824A6087800E68A31 /* DepartmentSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
