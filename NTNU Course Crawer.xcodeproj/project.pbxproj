@@ -15,7 +15,7 @@
 		59B4574824A6087800E68A31 /* DepartmentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */; };
 		59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574924A6088F00E68A31 /* CourseInfoView.swift */; };
 		59B4574D24A62ECC00E68A31 /* .gitattribute in Resources */ = {isa = PBXBuildFile; fileRef = 59B4574C24A62ECC00E68A31 /* .gitattribute */; };
-		67C5B13B2D20DAD7243658D7 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */; };
+		59B4574F24A64D2900E68A31 /* sampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = 59B4574E24A64D2900E68A31 /* sampleCourse.json */; };
 		835E997FF7CB061EDB937106 /* Pods_NTNU_Course_Crawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */; };
 		9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF02414FD8D008FE785 /* AppDelegate.swift */; };
 		9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF22414FD8D008FE785 /* SceneDelegate.swift */; };
@@ -58,6 +58,7 @@
 		59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectionView.swift; sourceTree = "<group>"; };
 		59B4574924A6088F00E68A31 /* CourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoView.swift; sourceTree = "<group>"; };
 		59B4574C24A62ECC00E68A31 /* .gitattribute */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattribute; sourceTree = "<group>"; };
+		59B4574E24A64D2900E68A31 /* sampleCourse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleCourse.json; sourceTree = "<group>"; };
 		67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
 		813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course CrawerTests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course CrawerTests/Pods-NTNU Course CrawerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +191,7 @@
 				9F158BFB2414FD95008FE785 /* LaunchScreen.storyboard */,
 				9F158BFE2414FD95008FE785 /* Info.plist */,
 				9FD848EF244CA6A00072E047 /* MainMenuViewController.swift */,
+				59B4574E24A64D2900E68A31 /* sampleCourse.json */,
 			);
 			path = "NTNU Course Crawer";
 			sourceTree = "<group>";
@@ -334,6 +336,7 @@
 				9F158BFD2414FD95008FE785 /* LaunchScreen.storyboard in Resources */,
 				9F158BFA2414FD95008FE785 /* Assets.xcassets in Resources */,
 				9F158BF82414FD8D008FE785 /* Main.storyboard in Resources */,
+				59B4574F24A64D2900E68A31 /* sampleCourse.json in Resources */,
 				59B4574D24A62ECC00E68A31 /* .gitattribute in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +475,6 @@
 				9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */,
 				9FEB82B224A488AE007CFD32 /* QueryModel.swift in Sources */,
 				9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */,
-				67C5B13B2D20DAD7243658D7 /* CourseRequestModel.swift in Sources */,
 				59B4574824A6087800E68A31 /* DepartmentSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

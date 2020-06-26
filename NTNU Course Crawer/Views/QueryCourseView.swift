@@ -13,14 +13,14 @@ struct QueryCourseView: View {
                     .font(.headline)
                     .padding()
                 HStack {
-                    ForEach(domains, id: \.self) { domain in
-                        NButton(label: domain)
+                    ForEach(domains, id: \.self) {
+                        NButton(label: $0)
                     }
                 }
                 .padding(.bottom)
                 HStack {
-                    ForEach(domains, id: \.self) { domain in
-                        NButton(label: domain)
+                    ForEach(domains, id: \.self) {
+                        NButton(label: $0)
                     }
                 }
                 .padding(.bottom)
