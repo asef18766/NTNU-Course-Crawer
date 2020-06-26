@@ -14,6 +14,7 @@
 		59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574524A604D300E68A31 /* NLabelTextField.swift */; };
 		59B4574824A6087800E68A31 /* DepartmentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */; };
 		59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574924A6088F00E68A31 /* CourseInfoView.swift */; };
+		59B4574D24A62ECC00E68A31 /* .gitattribute in Resources */ = {isa = PBXBuildFile; fileRef = 59B4574C24A62ECC00E68A31 /* .gitattribute */; };
 		67C5B13B2D20DAD7243658D7 /* CourseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */; };
 		835E997FF7CB061EDB937106 /* Pods_NTNU_Course_Crawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */; };
 		9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF02414FD8D008FE785 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		59B4574524A604D300E68A31 /* NLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLabelTextField.swift; sourceTree = "<group>"; };
 		59B4574724A6087800E68A31 /* DepartmentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectionView.swift; sourceTree = "<group>"; };
 		59B4574924A6088F00E68A31 /* CourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoView.swift; sourceTree = "<group>"; };
+		59B4574C24A62ECC00E68A31 /* .gitattribute */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattribute; sourceTree = "<group>"; };
 		67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
 		813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course CrawerTests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course CrawerTests/Pods-NTNU Course CrawerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		59B4574B24A62E7300E68A31 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		913A0DF4E8ACF53AECDA5DF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +154,14 @@
 		9F158BE42414FD8D008FE785 = {
 			isa = PBXGroup;
 			children = (
+				59B4574C24A62ECC00E68A31 /* .gitattribute */,
 				9F158BEF2414FD8D008FE785 /* NTNU Course Crawer */,
 				9F158C062414FD95008FE785 /* NTNU Course CrawerTests */,
 				9F158C112414FD95008FE785 /* NTNU Course CrawerUITests */,
 				9F158BEE2414FD8D008FE785 /* Products */,
 				913A0DF4E8ACF53AECDA5DF2 /* Pods */,
 				B7C1D36D3D73956DE00CD73A /* Frameworks */,
+				59B4574B24A62E7300E68A31 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,6 +334,7 @@
 				9F158BFD2414FD95008FE785 /* LaunchScreen.storyboard in Resources */,
 				9F158BFA2414FD95008FE785 /* Assets.xcassets in Resources */,
 				9F158BF82414FD8D008FE785 /* Main.storyboard in Resources */,
+				59B4574D24A62ECC00E68A31 /* .gitattribute in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
