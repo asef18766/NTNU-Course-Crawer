@@ -162,6 +162,8 @@ internal func SendRequest(queryUrl:String , method:String , body:String) -> Data
     semaphore.wait()
     return result
 }
+
+//MARK:query course api
 func QueryCoursePrerequisite()
 {
     _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/CourseQueryCtrl?action=query", method: "GET", body: "")
@@ -188,4 +190,67 @@ func QueryCourseList(opts:QueryCourseListOptions)->[Course]
 func ExitQueryCourseList()
 {
     _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl", method: "GET", body: "")
+}
+
+// get course schedule
+func QueryCourseSchedule()->[Course]
+{
+    let url = "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl?action=showGrid&page=1&start=0&limit=999999&group=%5B%7B%22property%22%3A%22v_totalCredit%22%2C%22direction%22%3A%22ASC%22%7D%5D&sort=%5B%7B%22property%22%3A%22v_totalCredit%22%2C%22direction%22%3A%22ASC%22%7D%5D"
+    
+    _ = SendRequest(queryUrl: url, method: "GET", body: "")
+    return []
+}
+
+//MARK: download course schedule
+// download course schedule given filename and return the downloaded result in full path
+func DownLoadCourseSchedule(_ filename:String) throws -> String
+{
+    var fullPath = ""
+    var executeError:Error? = nil
+    // Create destination URL
+    if let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+    {
+        let destinationFileUrl = documentsUrl.appendingPathComponent(filename)
+
+        //Create URL to the source file you want to download
+        let fileURL = URL(string: "http://cos3.ntnu.edu.tw/AasEnrollStudent/CourseScheduleCtrl?report=reportA4&action=pdfJ")
+        
+        let semaphore = DispatchSemaphore(value: 0)
+        
+        let dataTask = URLSession.shared.downloadTask(with: fileURL!)
+        {
+            tempLocalUrl ,  response , error  in
+            if let tempLocalUrl = tempLocalUrl, error == nil
+            {
+                // Success
+                if let statusCode = (response as? HTTPURLResponse)?.statusCode
+                {
+                    print("Successfully downloaded. Status code: \(statusCode)")
+                }
+                
+                do
+                {
+                    try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
+                    fullPath = destinationFileUrl.absoluteString
+                    print("successfully downloadfile at location\(destinationFileUrl)")
+                }
+                catch (let writeError)
+                {
+                    executeError = writeError
+                }
+            }
+            else
+            {
+                executeError = error
+            }
+            semaphore.signal()
+        }
+        dataTask.resume()
+        semaphore.wait()
+    }
+    if let e = executeError
+    {
+        throw e
+    }
+    return fullPath
 }
