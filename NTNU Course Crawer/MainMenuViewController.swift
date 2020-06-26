@@ -8,13 +8,28 @@
 
 import UIKit
 
-class MainMenuViewController: UIViewController {
+class MainMenuViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
+        do
+        {
+            let res = try DownLoadCourseSchedule("schedule.pdf")
+            print("res path \(res)")
+        }
+        catch
+        {
+            print("error when downloading file")
+        }
         // Do any additional setup after loading the view.
-        QueryCurrentCourse()
+        let opts: QueryCourseListOptions = QueryCourseListOptions(serialNo: "", chnName: "", teacher: "")
+        print("try to query")
+        let c = QueryCourseList(opts: opts)
+        print("end query")
+        print("course : \(c.count)")
+        
     }
     
 

@@ -222,4 +222,8 @@ func secondLogin(_ stdID : String) throws
         print("got second login msg: \(result)")
         throw  NetworkErrors.SecondLoginError
     }
+    
+    _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/EnrollCtrl?action=go", method: "GET", body: "")
+    _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl", method: "GET", body: "")
+    
 }
