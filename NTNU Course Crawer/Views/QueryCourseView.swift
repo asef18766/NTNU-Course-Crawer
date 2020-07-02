@@ -1,5 +1,33 @@
 import SwiftUI
 
+struct NPickerButton: View {
+    @State var isPresented: Bool
+    @State var choiceIndex: Int
+    let choices: [String]
+    let label: String
+    
+    var body: some View {
+        Button(action: {
+            self.isPresented = true
+        }) {
+            HStack() {
+                Text(label)
+                    .font(.headline)
+                Spacer()
+                Text(choices[choiceIndex])
+            }.padding()
+            .sheet(isPresented: $isPresented) {
+                NPicker(
+                    isPresented: self.$isPresented,
+                    choiceIndex: self.$choiceIndex,
+                    choices: self.choices,
+                    label: self.label
+                )
+            }.foregroundColor(.black)
+        }
+    }
+}
+
 struct QueryCourseView: View {
     @State var teacherName = ""
     @State var departmentIndex = 0
@@ -26,22 +54,21 @@ struct QueryCourseView: View {
                     }
                     .padding(.bottom)
                 }
-                Button(action: {
-                    self.showDepartmentSelection = true
-                }) {
-                    HStack() {
-                        Text("開課系所")
-                            .font(.headline)
-                        Spacer()
-                        Text(self.domains[departmentIndex])
-                    }.padding()
-                    .sheet(isPresented: $showDepartmentSelection) {
-                            DepartmentSelectionView(departmentIndex: self.$departmentIndex, isPresented: self.$showDepartmentSelection)
-                    }.foregroundColor(.black)
-                }
+                NPickerButton(
+                    isPresented: showDepartmentSelection,
+                    choiceIndex: departmentIndex,
+                    choices: ["資工系", "物理系", "數學系"],
+                    label: "系所"
+                )
                 NLabelTextField(text: $teacherName, label: "教師姓名")
                 NLabelTextField(text: $teacherName, label: "課程名稱")
                 NLabelTextField(text: $teacherName, label: "開課序號")
+                NPickerButton(
+                    isPresented: showDepartmentSelection,
+                    choiceIndex: departmentIndex,
+                    choices: ["資工系", "物理系", "數學系"],
+                    label: "通識核心領域"
+                )
                 SectionSelection()
                 HStack {
                     Spacer()
