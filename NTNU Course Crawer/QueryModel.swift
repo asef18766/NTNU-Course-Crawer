@@ -192,15 +192,6 @@ func ExitQueryCourseList()
     _ = SendRequest(queryUrl: "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl", method: "GET", body: "")
 }
 
-// get course schedule
-func QueryCourseSchedule()->[Course]
-{
-    let url = "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl?action=showGrid&page=1&start=0&limit=999999&group=%5B%7B%22property%22%3A%22v_totalCredit%22%2C%22direction%22%3A%22ASC%22%7D%5D&sort=%5B%7B%22property%22%3A%22v_totalCredit%22%2C%22direction%22%3A%22ASC%22%7D%5D"
-    
-    _ = SendRequest(queryUrl: url, method: "GET", body: "")
-    return []
-}
-
 //MARK: download course schedule
 // download course schedule given filename and return the downloaded result in full path
 func DownLoadCourseSchedule(_ filename:String) throws -> String
@@ -275,4 +266,77 @@ class Favours
     {
         LoadFavours()
     }
+}
+
+//MARK:course schedule unit
+struct CourseScheduleObject:Codable
+{
+    var abnScore:String
+    var acadmTerm:String
+    var acadmYear:String
+    var applyCode:String
+    var authorizeCode:String
+    var chnName:String
+    var class1:String
+    var courseCode:String
+    var courseGroup:String
+    var courseKind:String
+    var deptCode:String
+    var deptGroup:String
+    var domain:String
+    var formS:String
+    var moeCredit:Int
+    var normalScore:String
+    var optionCode:String
+    var phase:Int
+    var priority:Int
+    var stage:Int
+    var stdNo:String
+    var stdNoOthSchl:String
+    var summerPhase:String
+    var v_CHN_NAME:String
+    var v_ENG_NAME:String
+    var v_ROOM_NAME:String
+    var v_SECTION:String
+    var v_WEEK_NO:String
+    var v_class1:String
+    var v_comment:String
+    var v_deptChiabbr:String
+    var v_deptChiabbr988:String
+    var v_deptGroup:String
+    var v_domain:String
+    var v_engTeach:String
+    var v_limitCountH:Int
+    var v_limitCourse:String
+    var v_moocs:String
+    var v_normalScore:String
+    var v_phase:String
+    var v_priority:String
+    var v_serialNo:String
+    var v_stage:String
+    var v_stdChnName:String
+    var v_teacher:String
+    var v_timeInfo:String
+    var v_totalCredit:String
+}
+struct RawCourseSchedule:Codable
+{
+    var Count:Int
+    var List:[CourseScheduleObject]
+}
+
+// get course schedule
+func QueryCourseSchedule()->[CourseScheduleObject]
+{
+    let url = "http://cos3.ntnu.edu.tw/AasEnrollStudent/StfseldListCtrl?action=showGrid&page=1&start=0&limit=999999&group=%5B%7B%22property%22%3A%22v_totalCredit%22%2C%22direction%22%3A%22ASC%22%7D%5D&sort=%5B%7B%22property%22%3A%22v_totalCredit%22%2C%22direction%22%3A%22ASC%22%7D%5D"
+    
+    if let rawData = SendRequest(queryUrl: url, method: "GET", body: "")
+    {
+        let decoder = JSONDecoder()
+        if let d = try? decoder.decode(RawCourseSchedule.self, from: rawData)
+        {
+            return d.List
+        }
+    }
+    return []
 }
