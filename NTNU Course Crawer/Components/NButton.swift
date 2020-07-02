@@ -22,7 +22,7 @@ struct NButton: View {
                 .padding(.all)
         }
         .background(color)
-        .cornerRadius(25)
+        .cornerRadius(20)
     }
 }
 
