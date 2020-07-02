@@ -10,6 +10,10 @@
 		06CABF55B702A19D415BE4ED /* Pods_NTNU_Course_CrawerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */; };
 		184DAEF29D64FD90EC8E45E4 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */; };
 		5904F85324A76CFB00F39AB0 /* SectionSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5904F85224A76CFB00F39AB0 /* SectionSelection.swift */; };
+		5958BB0724ADDA770099E2AA /* QueryResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0624ADDA770099E2AA /* QueryResultView.swift */; };
+		5958BB0924ADDB3E0099E2AA /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0824ADDB3E0099E2AA /* CourseRow.swift */; };
+		5958BB0B24ADE17E0099E2AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0A24ADE17E0099E2AA /* MainView.swift */; };
+		5958BB0D24ADE2450099E2AA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0C24ADE2450099E2AA /* LoginView.swift */; };
 		59B4574024A6038600E68A31 /* QueryCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4573F24A6038600E68A31 /* QueryCourseView.swift */; };
 		59B4574424A6048700E68A31 /* NButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574324A6048700E68A31 /* NButton.swift */; };
 		59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574524A604D300E68A31 /* NLabelTextField.swift */; };
@@ -54,6 +58,10 @@
 		33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA1318A57F4D09905D3976E /* Pods-NTNU Course Crawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer.release.xcconfig"; sourceTree = "<group>"; };
 		5904F85224A76CFB00F39AB0 /* SectionSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSelection.swift; sourceTree = "<group>"; };
+		5958BB0624ADDA770099E2AA /* QueryResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResultView.swift; sourceTree = "<group>"; };
+		5958BB0824ADDB3E0099E2AA /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		5958BB0A24ADE17E0099E2AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5958BB0C24ADE2450099E2AA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		59B4573F24A6038600E68A31 /* QueryCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCourseView.swift; sourceTree = "<group>"; };
 		59B4574324A6048700E68A31 /* NButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NButton.swift; sourceTree = "<group>"; };
 		59B4574524A604D300E68A31 /* NLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLabelTextField.swift; sourceTree = "<group>"; };
@@ -119,6 +127,9 @@
 			children = (
 				59B4573F24A6038600E68A31 /* QueryCourseView.swift */,
 				59B4574924A6088F00E68A31 /* CourseInfoView.swift */,
+				5958BB0624ADDA770099E2AA /* QueryResultView.swift */,
+				5958BB0A24ADE17E0099E2AA /* MainView.swift */,
+				5958BB0C24ADE2450099E2AA /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 				59B4574324A6048700E68A31 /* NButton.swift */,
 				59B4574524A604D300E68A31 /* NLabelTextField.swift */,
 				5904F85224A76CFB00F39AB0 /* SectionSelection.swift */,
+				5958BB0824ADDB3E0099E2AA /* CourseRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -471,6 +483,7 @@
 				9F158BF52414FD8D008FE785 /* ViewController.swift in Sources */,
 				9FD848F0244CA6A00072E047 /* MainMenuViewController.swift in Sources */,
 				59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */,
+				5958BB0924ADDB3E0099E2AA /* CourseRow.swift in Sources */,
 				59B4574424A6048700E68A31 /* NButton.swift in Sources */,
 				5904F85324A76CFB00F39AB0 /* SectionSelection.swift in Sources */,
 				59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */,
@@ -479,6 +492,9 @@
 				9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */,
 				9FEB82B224A488AE007CFD32 /* QueryModel.swift in Sources */,
 				9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */,
+				5958BB0724ADDA770099E2AA /* QueryResultView.swift in Sources */,
+				5958BB0B24ADE17E0099E2AA /* MainView.swift in Sources */,
+				5958BB0D24ADE2450099E2AA /* LoginView.swift in Sources */,
 				59B4574824A6087800E68A31 /* NPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

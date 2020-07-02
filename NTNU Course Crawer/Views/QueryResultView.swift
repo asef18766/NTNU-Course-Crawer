@@ -1,11 +1,3 @@
-//
-//  QueryResultView.swift
-//  NTNU Course Crawer
-//
-//  Created by Bogay Chuang on 2020/7/2.
-//  Copyright © 2020 Normal OJ. All rights reserved.
-//
-
 import SwiftUI
 
 struct QueryResultView: View {

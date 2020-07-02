@@ -1,11 +1,3 @@
-//
-//  NLabelTextField.swift
-//  NTNU Course Crawer
-//
-//  Created by Student on 2020/6/25.
-//  Copyright © 2020 Normal OJ. All rights reserved.
-//
-
 import SwiftUI
 
 struct NLabelTextField: View {
