@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct QueryResultView: View {
+struct CourseListView: View {
+    var label: String
     var courses: [Course]
     
     var body: some View {
@@ -11,12 +12,12 @@ struct QueryResultView: View {
                         CourseRow(course: course)
                     }
                 }
-            }.navigationBarTitle("查詢結果")
+            }.navigationBarTitle(label)
         }
     }
 }
 
-struct QueryResultView_Previews: PreviewProvider {
+struct CourseListView_Previews: PreviewProvider {
     static var previews: some View {
         func loadSampleCourse() -> Course? {
             if let path = Bundle.main.path(forResource: "sampleCourse", ofType: "json") {
@@ -30,6 +31,12 @@ struct QueryResultView_Previews: PreviewProvider {
             }
             return nil
         }
-        return QueryResultView(courses: [Course](repeating:  loadSampleCourse()!, count: 1))
+        return CourseListView(
+            label: "查詢結果",
+            courses: [Course](
+                repeating: loadSampleCourse()!,
+                count: 1
+            )
+        )
     }
 }

@@ -1,8 +1,11 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var username: String = ""
-    @State var password: String = ""
+    @Binding var logined: Bool
+    @State var username = ""
+    @State var password = ""
+    @State var loginFail = false
+    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 2)
     
     var body: some View {
         VStack {
@@ -16,16 +19,43 @@ struct LoginView: View {
             Spacer()
             NLabelTextField(text: $username, label: "帳號")
                 .padding(.horizontal)
+                .frame(maxWidth: 500)
             NLabelTextField(text: $password, label: "密碼")
                 .padding([.leading, .bottom, .trailing])
-            NButton(label: "登入", action: {})
+                .frame(maxWidth: 500)
+                .background(GeometryGetter(rect: $kGuardian.rects[0]))
+            NButton(label: "登入", action: {
+                if login(self.username, self.password) {
+                    self.logined = true
+                } else {
+                    self.loginFail = true
+                }
+            })
+                .padding(.bottom, 5)
+            HStack(spacing: 0.0) {
+                Text("還沒有帳號嗎？建議你可以先考上")
+                Text("師大")
+                    .underline()
+                    .foregroundColor(.blue)
+                    .onTapGesture {
+                        let url = URL(string: "https://www.ntnu.edu.tw")
+                        UIApplication.shared.open(url!)
+                    }
+            }
+            if(loginFail) {
+                Text("登入失敗！")
+                    .font(.headline)
+                    .foregroundColor(.red)
+            }
             Spacer()
-        }
+        }.offset(y: kGuardian.slide)
+            .animation(.easeInOut(duration: 1.0))
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
+    @State static var logined = false
     static var previews: some View {
-        LoginView()
+        return LoginView(logined: $logined)
     }
 }

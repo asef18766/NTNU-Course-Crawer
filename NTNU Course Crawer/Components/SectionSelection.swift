@@ -3,6 +3,13 @@ import SwiftUI
 struct SectionSelection: View {
     let weekdays = ["", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat"]
     var sections = [[Section]](repeating: [Section](repeating: Section(), count: 6), count: 15)
+    var selections: [[Bool]] {
+        get {
+            return sections.map { row in
+                row.map(\.selected)
+            }
+        }
+    }
     
     var body: some View {
         VStack(spacing: 0.0) {
