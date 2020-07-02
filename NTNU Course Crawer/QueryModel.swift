@@ -254,3 +254,25 @@ func DownLoadCourseSchedule(_ filename:String) throws -> String
     }
     return fullPath
 }
+
+
+//MARK: favour system
+class Favours
+{
+    var courseIDs:[String] = []
+    
+    func SaveFavours()
+    {
+        let userdefault = UserDefaults.standard
+        userdefault.set(courseIDs, forKey: "favours")
+    }
+    func LoadFavours()
+    {
+        let userdefault = UserDefaults.standard
+        courseIDs = userdefault.stringArray(forKey: "favours") ?? [String]()
+    }
+    init()
+    {
+        LoadFavours()
+    }
+}
