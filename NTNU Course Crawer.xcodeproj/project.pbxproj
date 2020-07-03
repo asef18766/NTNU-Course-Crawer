@@ -9,6 +9,21 @@
 /* Begin PBXBuildFile section */
 		06CABF55B702A19D415BE4ED /* Pods_NTNU_Course_CrawerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */; };
 		184DAEF29D64FD90EC8E45E4 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */; };
+		5904F85324A76CFB00F39AB0 /* SectionSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5904F85224A76CFB00F39AB0 /* SectionSelection.swift */; };
+		5958BB0724ADDA770099E2AA /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0624ADDA770099E2AA /* CourseListView.swift */; };
+		5958BB0924ADDB3E0099E2AA /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0824ADDB3E0099E2AA /* CourseRow.swift */; };
+		5958BB0B24ADE17E0099E2AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0A24ADE17E0099E2AA /* MainView.swift */; };
+		5958BB0D24ADE2450099E2AA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0C24ADE2450099E2AA /* LoginView.swift */; };
+		5958BB0F24AE12D90099E2AA /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0E24AE12D90099E2AA /* EntryView.swift */; };
+		5958BB1324AE173E0099E2AA /* KeyboardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB1224AE173E0099E2AA /* KeyboardGuardian.swift */; };
+		5958BB1524AE17740099E2AA /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB1424AE17740099E2AA /* GeometryGetter.swift */; };
+		59B4574024A6038600E68A31 /* QueryCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4573F24A6038600E68A31 /* QueryCourseView.swift */; };
+		59B4574424A6048700E68A31 /* NButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574324A6048700E68A31 /* NButton.swift */; };
+		59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574524A604D300E68A31 /* NLabelTextField.swift */; };
+		59B4574824A6087800E68A31 /* NPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574724A6087800E68A31 /* NPicker.swift */; };
+		59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574924A6088F00E68A31 /* CourseInfoView.swift */; };
+		59B4574D24A62ECC00E68A31 /* .gitattribute in Resources */ = {isa = PBXBuildFile; fileRef = 59B4574C24A62ECC00E68A31 /* .gitattribute */; };
+		59B4574F24A64D2900E68A31 /* sampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = 59B4574E24A64D2900E68A31 /* sampleCourse.json */; };
 		835E997FF7CB061EDB937106 /* Pods_NTNU_Course_Crawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04527414A7ECD521C1E3F9B6 /* Pods_NTNU_Course_Crawer.framework */; };
 		9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF02414FD8D008FE785 /* AppDelegate.swift */; };
 		9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F158BF22414FD8D008FE785 /* SceneDelegate.swift */; };
@@ -45,6 +60,22 @@
 		13BCB57A8EF29140D2FBA2D6 /* Pods_NTNU_Course_CrawerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_CrawerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE7D96C4E2AB946DFA1A83 /* Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTNU_Course_Crawer_NTNU_Course_CrawerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA1318A57F4D09905D3976E /* Pods-NTNU Course Crawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer/Pods-NTNU Course Crawer.release.xcconfig"; sourceTree = "<group>"; };
+		5904F85224A76CFB00F39AB0 /* SectionSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSelection.swift; sourceTree = "<group>"; };
+		5958BB0624ADDA770099E2AA /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		5958BB0824ADDB3E0099E2AA /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		5958BB0A24ADE17E0099E2AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5958BB0C24ADE2450099E2AA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5958BB0E24AE12D90099E2AA /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		5958BB1224AE173E0099E2AA /* KeyboardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGuardian.swift; sourceTree = "<group>"; };
+		5958BB1424AE17740099E2AA /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
+		59B4573F24A6038600E68A31 /* QueryCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCourseView.swift; sourceTree = "<group>"; };
+		59B4574324A6048700E68A31 /* NButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NButton.swift; sourceTree = "<group>"; };
+		59B4574524A604D300E68A31 /* NLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLabelTextField.swift; sourceTree = "<group>"; };
+		59B4574724A6087800E68A31 /* NPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPicker.swift; sourceTree = "<group>"; };
+		59B4574924A6088F00E68A31 /* CourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoView.swift; sourceTree = "<group>"; };
+		59B4574C24A62ECC00E68A31 /* .gitattribute */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattribute; sourceTree = "<group>"; };
+		59B4574E24A64D2900E68A31 /* sampleCourse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleCourse.json; sourceTree = "<group>"; };
+		67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseRequestModel.swift; sourceTree = "<group>"; };
 		813577050871834327714403 /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		820DF7B7B91A49F67B4E68FA /* Pods-NTNU Course CrawerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course CrawerTests.debug.xcconfig"; path = "Target Support Files/Pods-NTNU Course CrawerTests/Pods-NTNU Course CrawerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		954C35BF499513CF1136F69F /* Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig"; path = "Target Support Files/Pods-NTNU Course Crawer-NTNU Course CrawerUITests/Pods-NTNU Course Crawer-NTNU Course CrawerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +128,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5958BB1124AE171B0099E2AA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5958BB1224AE173E0099E2AA /* KeyboardGuardian.swift */,
+				5958BB1424AE17740099E2AA /* GeometryGetter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		59B4573E24A602E900E68A31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59B4573F24A6038600E68A31 /* QueryCourseView.swift */,
+				59B4574924A6088F00E68A31 /* CourseInfoView.swift */,
+				5958BB0624ADDA770099E2AA /* CourseListView.swift */,
+				5958BB0A24ADE17E0099E2AA /* MainView.swift */,
+				5958BB0C24ADE2450099E2AA /* LoginView.swift */,
+				5958BB0E24AE12D90099E2AA /* EntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59B4574124A6046000E68A31 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				59B4574724A6087800E68A31 /* NPicker.swift */,
+				59B4574324A6048700E68A31 /* NButton.swift */,
+				59B4574524A604D300E68A31 /* NLabelTextField.swift */,
+				5904F85224A76CFB00F39AB0 /* SectionSelection.swift */,
+				5958BB0824ADDB3E0099E2AA /* CourseRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		59B4574B24A62E7300E68A31 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				67C5B2E2017C165C32A81377 /* CourseRequestModel.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		913A0DF4E8ACF53AECDA5DF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +186,14 @@
 		9F158BE42414FD8D008FE785 = {
 			isa = PBXGroup;
 			children = (
+				59B4574C24A62ECC00E68A31 /* .gitattribute */,
 				9F158BEF2414FD8D008FE785 /* NTNU Course Crawer */,
 				9F158C062414FD95008FE785 /* NTNU Course CrawerTests */,
 				9F158C112414FD95008FE785 /* NTNU Course CrawerUITests */,
 				9F158BEE2414FD8D008FE785 /* Products */,
 				913A0DF4E8ACF53AECDA5DF2 /* Pods */,
 				B7C1D36D3D73956DE00CD73A /* Frameworks */,
+				59B4574B24A62E7300E68A31 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +210,9 @@
 		9F158BEF2414FD8D008FE785 /* NTNU Course Crawer */ = {
 			isa = PBXGroup;
 			children = (
+				5958BB1124AE171B0099E2AA /* Utils */,
+				59B4574124A6046000E68A31 /* Components */,
+				59B4573E24A602E900E68A31 /* Views */,
 				9FEB82B124A488AE007CFD32 /* QueryModel.swift */,
 				9FA11ED8244069A4000B4A6E /* LoginModel.swift */,
 				9F158BF02414FD8D008FE785 /* AppDelegate.swift */,
@@ -145,6 +223,7 @@
 				9F158BFB2414FD95008FE785 /* LaunchScreen.storyboard */,
 				9F158BFE2414FD95008FE785 /* Info.plist */,
 				9FD848EF244CA6A00072E047 /* MainMenuViewController.swift */,
+				59B4574E24A64D2900E68A31 /* sampleCourse.json */,
 			);
 			path = "NTNU Course Crawer";
 			sourceTree = "<group>";
@@ -289,6 +368,8 @@
 				9F158BFD2414FD95008FE785 /* LaunchScreen.storyboard in Resources */,
 				9F158BFA2414FD95008FE785 /* Assets.xcassets in Resources */,
 				9F158BF82414FD8D008FE785 /* Main.storyboard in Resources */,
+				59B4574F24A64D2900E68A31 /* sampleCourse.json in Resources */,
+				59B4574D24A62ECC00E68A31 /* .gitattribute in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +498,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F158BF52414FD8D008FE785 /* ViewController.swift in Sources */,
+				5958BB1324AE173E0099E2AA /* KeyboardGuardian.swift in Sources */,
 				9FD848F0244CA6A00072E047 /* MainMenuViewController.swift in Sources */,
+				59B4574A24A6088F00E68A31 /* CourseInfoView.swift in Sources */,
+				5958BB0924ADDB3E0099E2AA /* CourseRow.swift in Sources */,
+				59B4574424A6048700E68A31 /* NButton.swift in Sources */,
+				5904F85324A76CFB00F39AB0 /* SectionSelection.swift in Sources */,
+				59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */,
 				9FA11ED9244069A4000B4A6E /* LoginModel.swift in Sources */,
+				59B4574024A6038600E68A31 /* QueryCourseView.swift in Sources */,
 				9F158BF12414FD8D008FE785 /* AppDelegate.swift in Sources */,
 				9FEB82B224A488AE007CFD32 /* QueryModel.swift in Sources */,
+				5958BB1524AE17740099E2AA /* GeometryGetter.swift in Sources */,
 				9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */,
+				5958BB0724ADDA770099E2AA /* CourseListView.swift in Sources */,
+				5958BB0B24ADE17E0099E2AA /* MainView.swift in Sources */,
+				5958BB0D24ADE2450099E2AA /* LoginView.swift in Sources */,
+				5958BB0F24AE12D90099E2AA /* EntryView.swift in Sources */,
+				59B4574824A6087800E68A31 /* NPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "NTNU Course Crawer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,6 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "NTNU Course Crawer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
