@@ -5,7 +5,6 @@ struct LoginView: View {
     @State var username = ""
     @State var password = ""
     @State var loginFail = false
-    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 2)
     
     var body: some View {
         VStack {
@@ -21,17 +20,15 @@ struct LoginView: View {
                 .padding(.horizontal)
                 .frame(maxWidth: 500)
             NLabelTextField(text: $password, label: "密碼")
-                .padding([.leading, .bottom, .trailing])
+                .padding()
                 .frame(maxWidth: 500)
-                .background(GeometryGetter(rect: $kGuardian.rects[0]))
             NButton(label: "登入", action: {
                 if login(self.username, self.password) {
                     self.logined = true
                 } else {
                     self.loginFail = true
                 }
-            })
-                .padding(.bottom, 5)
+            }).padding(.bottom, 5)
             HStack(spacing: 0.0) {
                 Text("還沒有帳號嗎？建議你可以先考上")
                 Text("師大")
@@ -48,8 +45,8 @@ struct LoginView: View {
                     .foregroundColor(.red)
             }
             Spacer()
-        }.offset(y: kGuardian.slide)
-            .animation(.easeInOut(duration: 1.0))
+        }.padding()
+        .keyboardAdaptive()
     }
 }
 

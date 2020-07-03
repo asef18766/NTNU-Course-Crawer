@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EntryView: View {
-    @State var logined = true
+    @State var logined = false
     
     var body: some View {
         VStack {
