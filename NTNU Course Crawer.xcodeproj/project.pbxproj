@@ -17,6 +17,7 @@
 		5958BB0F24AE12D90099E2AA /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB0E24AE12D90099E2AA /* EntryView.swift */; };
 		5958BB1324AE173E0099E2AA /* KeyboardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB1224AE173E0099E2AA /* KeyboardGuardian.swift */; };
 		5958BB1524AE17740099E2AA /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5958BB1424AE17740099E2AA /* GeometryGetter.swift */; };
+		595CDFB124AF72E700499FA6 /* QueryCourseMotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595CDFB024AF72E700499FA6 /* QueryCourseMotherView.swift */; };
 		59B4574024A6038600E68A31 /* QueryCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4573F24A6038600E68A31 /* QueryCourseView.swift */; };
 		59B4574424A6048700E68A31 /* NButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574324A6048700E68A31 /* NButton.swift */; };
 		59B4574624A604D300E68A31 /* NLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B4574524A604D300E68A31 /* NLabelTextField.swift */; };
@@ -68,6 +69,7 @@
 		5958BB0E24AE12D90099E2AA /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		5958BB1224AE173E0099E2AA /* KeyboardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGuardian.swift; sourceTree = "<group>"; };
 		5958BB1424AE17740099E2AA /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
+		595CDFB024AF72E700499FA6 /* QueryCourseMotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCourseMotherView.swift; sourceTree = "<group>"; };
 		59B4573F24A6038600E68A31 /* QueryCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCourseView.swift; sourceTree = "<group>"; };
 		59B4574324A6048700E68A31 /* NButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NButton.swift; sourceTree = "<group>"; };
 		59B4574524A604D300E68A31 /* NLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLabelTextField.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				5958BB0A24ADE17E0099E2AA /* MainView.swift */,
 				5958BB0C24ADE2450099E2AA /* LoginView.swift */,
 				5958BB0E24AE12D90099E2AA /* EntryView.swift */,
+				595CDFB024AF72E700499FA6 /* QueryCourseMotherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				5958BB1524AE17740099E2AA /* GeometryGetter.swift in Sources */,
 				9F158BF32414FD8D008FE785 /* SceneDelegate.swift in Sources */,
 				5958BB0724ADDA770099E2AA /* CourseListView.swift in Sources */,
+				595CDFB124AF72E700499FA6 /* QueryCourseMotherView.swift in Sources */,
 				5958BB0B24ADE17E0099E2AA /* MainView.swift in Sources */,
 				5958BB0D24ADE2450099E2AA /* LoginView.swift in Sources */,
 				5958BB0F24AE12D90099E2AA /* EntryView.swift in Sources */,

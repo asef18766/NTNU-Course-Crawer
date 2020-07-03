@@ -29,6 +29,7 @@ struct NPickerButton: View {
 }
 
 struct QueryCourseView: View {
+    @Binding var queryResults: [Course]
     @State var teacherName = ""
     @State var courseName = ""
     @State var courseCode = ""
@@ -37,6 +38,7 @@ struct QueryCourseView: View {
     @State var showDepartmentSelection = false
     @State var generalCoreIndex = 0
     @State var showGeneralCoreSelection = false
+    @State var showError = false
     var sectionSelection = SectionSelection()
     
     let departments = [
@@ -249,6 +251,7 @@ struct QueryCourseView: View {
                 HStack {
                     Spacer()
                     NButton(label: "查詢", action: {
+                        print("query")
                         // simple query options
                         var opts = QueryCourseListOptions(
                             serialNo: "",
@@ -268,15 +271,26 @@ struct QueryCourseView: View {
                             opts.generalCore = self.generalCores[self.generalCoreIndex].1
                         }
                         let courses = QueryCourseList(opts: opts)
+                        print("\(courses.map(\.courseCode))")
+                        if courses.count != 0 {
+                            self.showError = false
+                            self.queryResults = courses
+                        } else {
+                            self.showError = true
+                        }
                     })
                 }.padding(.trailing)
+                if showError {
+                    Text("查無課程資料，請重新輸入參數！")
+                }
             }.padding(.horizontal)
         }.padding(.bottom)
     }
 }
 
 struct QueryCourseView_Previews: PreviewProvider {
+    @State static var courses: [Course] = []
     static var previews: some View {
-        QueryCourseView()
+        QueryCourseView(queryResults: $courses)
     }
 }

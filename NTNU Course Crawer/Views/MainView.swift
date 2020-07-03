@@ -3,22 +3,22 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            QueryCourseView()
+            EmptyView()
                 .tabItem {
                     Image(systemName: "list.dash")
                     Text("列表")
                 }
-            QueryCourseView()
+            QueryCourseMotherView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("查詢")
                 }
-            QueryCourseView()
+            QueryCourseMotherView()
                 .tabItem {
                     Image(systemName: "star")
                     Text("最愛")
                 }
-            QueryCourseView()
+            QueryCourseMotherView()
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("設定")
